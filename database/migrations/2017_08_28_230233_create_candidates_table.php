@@ -27,7 +27,7 @@ class CreateCandidatesTable extends Migration
                   ->references('person_id')
                   ->on('people');
             $table->foreign('position_id')
-                  ->references('positiond_id')
+                  ->references('position_id')
                   -on('positions');
         });
     }
