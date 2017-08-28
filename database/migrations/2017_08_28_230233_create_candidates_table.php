@@ -14,8 +14,21 @@ class CreateCandidatesTable extends Migration
     public function up()
     {
         Schema::create('candidates', function (Blueprint $table) {
-            $table->increments('id');
+            $table->increments('candidate_id');
+            $table->integer('person_id');
+            $table->integer('position_id');
+            $table->date('start_date');
+            $table->date('end_date');
+            $table->boolean('complete');
+
             $table->timestamps();
+
+            $table->foreign('person_id')
+                  ->references('person_id')
+                  ->on('people');
+            $table->foreign('position_id')
+                  ->references('positiond_id')
+                  -on('positions');
         });
     }
 

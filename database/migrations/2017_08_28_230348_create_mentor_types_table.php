@@ -14,7 +14,9 @@ class CreateMentorTypesTable extends Migration
     public function up()
     {
         Schema::create('mentor_types', function (Blueprint $table) {
-            $table->increments('id');
+            $table->increments('mentor_type_id');
+            $table->string('title');
+            $table->mediumText('description');
             $table->timestamps();
         });
     }

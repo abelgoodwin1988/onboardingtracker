@@ -14,8 +14,20 @@ class CreateEmploymentsTable extends Migration
     public function up()
     {
         Schema::create('employments', function (Blueprint $table) {
-            $table->increments('id');
+            $table->increments('employment_id');
+            $table->integer('employee_id');
+            $table->integer('position_id');
+            $table->date('start_date');
+            $table->date('end_date');
+
             $table->timestamps();
+
+            $table->foreign('employee_id')
+                  ->references('employee_id')
+                  ->on('employees');
+            $table->foreign('position_id')
+                  ->references('position_id')
+                  ->on('positions');
         });
     }
 

@@ -14,8 +14,20 @@ class CreateMentorsTable extends Migration
     public function up()
     {
         Schema::create('mentors', function (Blueprint $table) {
-            $table->increments('id');
+            $table->increments('mentor_id');
+            $table->integer('mentor_type_id');
+            $table->integer('employee_id');
+            $table->date('start_time');
+            $table->date('end_time');
+
             $table->timestamps();
+
+            $table->foreign('mentor_type_id')
+                  ->references('mentor_type_id')
+                  ->on('mentor_types');
+            $table->foreign('employee_id')
+                  ->references('employee_id')
+                  ->on('employees');
         });
     }
 
