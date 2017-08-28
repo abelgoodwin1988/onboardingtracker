@@ -28,7 +28,7 @@ class CreateContactsTable extends Migration
 
             $table->timestamps();
 
-            $table->foreign('persion_id')
+            $table->foreign('person_id')
                   ->references('person_id')
                   ->on('people');
         });
