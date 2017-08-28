@@ -15,8 +15,8 @@ class CreateEmploymentsTable extends Migration
     {
         Schema::create('employments', function (Blueprint $table) {
             $table->increments('employment_id');
-            $table->integer('employee_id');
-            $table->integer('position_id');
+            $table->integer('employee_id')->unsigned();
+            $table->integer('position_id')->unsigned();
             $table->date('start_date');
             $table->date('end_date');
 

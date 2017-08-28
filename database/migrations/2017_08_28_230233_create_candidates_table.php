@@ -15,8 +15,8 @@ class CreateCandidatesTable extends Migration
     {
         Schema::create('candidates', function (Blueprint $table) {
             $table->increments('candidate_id');
-            $table->integer('person_id');
-            $table->integer('position_id');
+            $table->integer('person_id')->unsigned();
+            $table->integer('position_id')->unsigned();
             $table->date('start_date');
             $table->date('end_date');
             $table->boolean('complete');
