@@ -20,8 +20,8 @@ class CreateEmployeesTable extends Migration
             $table->timestamps();
 
             $table->foreign('person_id')
-                  ->on('person_id')
-                  ->references('people');
+                  ->references('person_id')
+                  ->on('people');
         });
     }
 
