@@ -19,7 +19,7 @@ class CreateCandidatesTable extends Migration
             $table->integer('position_id')->unsigned();
             $table->date('start_date')->nullable();
             $table->date('end_date')->nullable();
-            $table->boolean('complete')->default('false');
+            $table->boolean('complete')->default(false);
 
             $table->timestamps();
 
