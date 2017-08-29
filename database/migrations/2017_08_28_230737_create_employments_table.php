@@ -17,8 +17,8 @@ class CreateEmploymentsTable extends Migration
             $table->increments('employment_id');
             $table->integer('employee_id')->unsigned();
             $table->integer('position_id')->unsigned();
-            $table->date('start_date');
-            $table->date('end_date');
+            $table->date('start_date')->nullable();
+            $table->date('end_date')->nullable();
 
             $table->timestamps();
 

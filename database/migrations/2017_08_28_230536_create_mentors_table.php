@@ -17,8 +17,8 @@ class CreateMentorsTable extends Migration
             $table->increments('mentor_id');
             $table->integer('mentor_type_id')->unsigned();
             $table->integer('employee_id')->unsigned();
-            $table->date('start_time');
-            $table->date('end_time');
+            $table->date('start_time')->nullable();
+            $table->date('end_time')->nullable();
 
             $table->timestamps();
 
