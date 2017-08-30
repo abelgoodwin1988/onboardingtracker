@@ -8,7 +8,7 @@
     </li>
     <li>
       <a href="/people">
-        <span class="icon is-large"><i class="fa fa-user-plus"></i></span>
+        <span class="icon is-large"><i class="fa fa-plus"></i></span>
       </a>
     </li>
     <li>

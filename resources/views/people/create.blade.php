@@ -23,24 +23,7 @@
 
       @include('partials.errors.errors_list')
 
-      <div class="field">
-        <label class="label" for="name_first">First Name</label>
-        <input class="input" type="text" id="name_first" name="name_first" placeholder="First Name">
-      </div>
-
-      <div class="field">
-        <label class="label" for="name_middle">Middle Name(s)</label>
-        <input class="input" type="text" id="name_middle" name="name_middle" placeholder="Middle Name(s)">
-      </div>
-
-      <div class="field">
-        <label class="label" for="name_last">Last Name(s)</label>
-        <input class="input" type="text" id="name_last" name="name_last" placeholder="Last Name(s)">
-      </div>
-
-      <button class="button" type="submit" class="btn btn-primary">Publish</button>
-
-    </form>
+      @include('people.partials.create')
 
   </section>
 

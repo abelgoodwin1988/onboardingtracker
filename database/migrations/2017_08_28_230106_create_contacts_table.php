@@ -22,9 +22,6 @@ class CreateContactsTable extends Migration
             $table->string('state_province');
             $table->string('country');
             $table->string('zip');
-            $table->string('phone_number');
-            $table->string('email');
-            $table->boolean('is_primary');
 
             $table->timestamps();
 
