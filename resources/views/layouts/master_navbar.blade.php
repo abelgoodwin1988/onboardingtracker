@@ -1,4 +1,4 @@
-<div class="column is-1 is-gapless">
+<div class="column is-1 is-gapless has-text-centered" id="master_navbar">
 
   <ul>
     <li>

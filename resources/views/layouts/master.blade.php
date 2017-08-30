@@ -5,10 +5,7 @@
     <title>Onbarding Tracker</title>
 
     {{-- CSS: --}}
-    {{-- CSS:AwesomeFonts --}}
-    {{-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> --}}
-    {{-- <link rel="stylesheet" href="resources/assets/css/font-awesome.min.css"> --}}
-    {{-- CSS:Bulma --}}
+    {{-- CSS:Bulma,Font-Awesome --}}
     <link rel="stylesheet" href="{{ mix('/css/app.css') }}" >
 
   </head>
@@ -17,19 +14,28 @@
 
     {{-- left-aligned thin navbar --}}
     @include('layouts.master_navbar')
+
     {{-- header sections for additional details --}}
+
     {{-- content section --}}
       {{-- forms --}}
 
       <div class="column is-11 is-gapless">
         <div class="columns">
           <div class="column">
-            SubNav
+            @yield('sub_nav')
+            subnav
           </div>
         </div>
         <div class="columns">
           <div class="column">
-            Content
+            @yield('content')
+            content
+          </div>
+        </div>
+        <div class="columns">
+          <div class="column">
+            @include('layouts.master_footer')
           </div>
         </div>
       </div>
