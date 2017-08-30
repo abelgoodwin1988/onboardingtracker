@@ -1,9 +1,9 @@
 @extends('layouts.master')
 
 @section('sub_nav')
-  person subnav
+  look_ups subnav
 @endsection
 
 @section('content')
-  person content
+  look_ups content index
 @endsection

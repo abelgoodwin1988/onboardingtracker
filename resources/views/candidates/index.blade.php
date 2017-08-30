@@ -1,9 +1,9 @@
 @extends('layouts.master')
 
 @section('sub_nav')
-  look_ups subnav
+  candidates subnav
 @endsection
 
 @section('content')
-  look_ups content
+  candidates content index
 @endsection

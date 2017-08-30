@@ -16,11 +16,13 @@ Route::get('/', function () {
 });
 
 // PERSON
-Route::get('/person', 'PersonController@index');
+Route::get('/people', 'PersonController@index');
 
 // CANDIDATES
+Route::get('/candidates', 'CandidateController@index');
 
 // EMPLOYEES
+Route::get('/employees', 'EmployeeController@index');
 
 // LOOKUPS, :REQUIREMENTS, :MENTOR_TYPES, :POSITIONS
 // Because we have multiple identical classes, these will all be routed

@@ -7,7 +7,7 @@
       </a>
     </li>
     <li>
-      <a href="person">
+      <a href="people">
         <span class="icon is-large"><i class="fa fa-user-plus"></i></span>
       </a>
     </li>
