@@ -5,12 +5,15 @@
     <title>Onbarding Tracker</title>
 
     {{-- CSS: --}}
+    {{-- CSS:AwesomeFonts --}}
+    {{-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> --}}
+    {{-- <link rel="stylesheet" href="resources/assets/css/font-awesome.min.css"> --}}
     {{-- CSS:Bulma --}}
-    <link href="{{ mix('/css/app.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="{{ mix('/css/app.css') }}" >
 
   </head>
   <body>
-    <div class="columns is-mobile">
+    <div class="columns is-mobile is-gapless">
 
     {{-- left-aligned thin navbar --}}
     @include('layouts.master_navbar')
