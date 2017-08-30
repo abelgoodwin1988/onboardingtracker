@@ -2,7 +2,7 @@
 
   <ul>
     <li>
-      <a href="/">
+      <a href="/tool">
         <span class="icon is-large"><i class="fa fa-home"></i></span>
       </a>
     </li>

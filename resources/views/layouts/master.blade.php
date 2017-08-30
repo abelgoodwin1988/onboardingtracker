@@ -15,31 +15,34 @@
     {{-- left-aligned thin navbar --}}
     @include('layouts.master_navbar')
 
-    {{-- header sections for additional details --}}
-
-    {{-- content section --}}
-      {{-- forms --}}
-
       <div class="column is-11 is-gapless">
+
+        {{-- header sections for additional details --}}
         <div class="columns">
           <div class="column">
             @yield('sub_nav')
           </div>
         </div>
+
+        {{-- content section --}}
         <div class="columns">
           <div class="column">
             @yield('content')
           </div>
         </div>
+
+        {{-- footer section --}}
         <div class="columns">
           <div class="column">
             @include('layouts.master_footer')
           </div>
         </div>
+
       </div>
     </div>
 
     {{-- JS: Mixed JS file --}}
     <script src="{{ mix('/js/app.js') }}"></script>
+    
   </body>
 </html>

@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 @section('sub_nav')
-  person subnav
+  @include('people.layouts.navbar')
 @endsection
 
 @section('content')

@@ -11,8 +11,14 @@
 |
 */
 
+// INDEX, landing page!
 Route::get('/', function () {
-    return view('layouts.master');
+    return view('master_index');
+});
+
+// INDEX, tool landing!
+Route::get('/tool', function () {
+    return view('index');
 });
 
 // PERSON
@@ -28,5 +34,5 @@ Route::get('/employees', 'EmployeeController@index');
 // Because we have multiple identical classes, these will all be routed
   // to a place where their respective controllers will then take over.
 Route::get('/look_ups', function () {
-    return view('look_ups.show');
+    return view('look_ups.index');
 });
