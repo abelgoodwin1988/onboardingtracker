@@ -23,6 +23,7 @@ Route::get('/tool', function () {
 
 // PERSON
 Route::get('/people', 'PersonController@index');
+Route::get('/people/create', 'PersonController@create');
 
 // CANDIDATES
 Route::get('/candidates', 'CandidateController@index');

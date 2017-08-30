@@ -6,7 +6,7 @@
       </a>
     </li>
     <li>
-      <a href="#">
+      <a href="/people/create">
         <span class="icon"><i class="fa fa-user-plus"></i></span>
       </a>
     </li>
