@@ -1,6 +1,6 @@
 <div class="column is-1 is-gapless has-text-centered" id="master_navbar">
 
-  <ul class=>
+  <ul>
     <li>
       <a>
         <span class="icon is-large"><i class="fa fa-home"></i></span>
