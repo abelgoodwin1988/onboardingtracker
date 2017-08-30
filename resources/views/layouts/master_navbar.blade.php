@@ -7,25 +7,22 @@
       </a>
     </li>
     <li>
-      <a href="people">
+      <a href="/people">
         <span class="icon is-large"><i class="fa fa-user-plus"></i></span>
       </a>
     </li>
     <li>
-      <a href="candidates">
+      <a href="/candidates">
         <span class="icon is-large"><i class="fa fa-question-circle-o"></i></span>
       </a>
     </li>
     <li>
-      <a href="employees">
+      <a href="/employees">
         <span class="icon is-large"><i class="fa fa-user"></i></span>
       </a>
     </li>
     <li>
-      <hr />
-    </li>
-    <li>
-      <a href="look_ups">
+      <a href="/look_ups">
         <span class="icon is-large"><i class="fa fa-random"></i></span>
       </a>
     </li>

@@ -43,6 +43,6 @@
 
     {{-- JS: Mixed JS file --}}
     <script src="{{ mix('/js/app.js') }}"></script>
-    
+
   </body>
 </html>
