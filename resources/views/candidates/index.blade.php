@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 @section('sub_nav')
-  candidates subnav
+  @include('candidates.layouts.navbar')
 @endsection
 
 @section('content')

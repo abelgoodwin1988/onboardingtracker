@@ -2,27 +2,22 @@
   <ul>
     <li>
       <a href="#">
-        <span class="icon"><i class="fa fa-users"></i></span>
+        <span class="icon"><i class="fa fa-list"></i></span>
       </a>
     </li>
     <li>
       <a href="#">
-        <span class="icon"><i class="fa fa-user-plus"></i></span>
+        <span class="icon"><i class="fa fa-plus"></i></span>
       </a>
     </li>
     <li>
       <a href="#">
-        <span class="icon"><i class="fa fa-user-md"></i></span>
+        <span class="icon"><i class="fa fa-cog"></i></span>
       </a>
     </li>
     <li>
       <a href="#">
         <span class="icon"><i class="fa fa-ban"></i></span>
-      </a>
-    </li>
-    <li>
-      <a href="#">
-        <span class="icon"><i class="fa fa-address-book-o"></i></span>
       </a>
     </li>
   </ul>

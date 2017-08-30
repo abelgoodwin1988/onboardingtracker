@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 @section('sub_nav')
-  look_ups subnav
+  @include('look_ups.layouts.navbar')
 @endsection
 
 @section('content')

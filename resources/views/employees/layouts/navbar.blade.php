@@ -20,10 +20,5 @@
         <span class="icon"><i class="fa fa-ban"></i></span>
       </a>
     </li>
-    <li>
-      <a href="#">
-        <span class="icon"><i class="fa fa-address-book-o"></i></span>
-      </a>
-    </li>
   </ul>
 </div>
