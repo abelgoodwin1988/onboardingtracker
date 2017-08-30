@@ -24,13 +24,11 @@
         <div class="columns">
           <div class="column">
             @yield('sub_nav')
-            subnav
           </div>
         </div>
         <div class="columns">
           <div class="column">
             @yield('content')
-            content
           </div>
         </div>
         <div class="columns">

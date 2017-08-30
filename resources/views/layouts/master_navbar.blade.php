@@ -2,27 +2,30 @@
 
   <ul>
     <li>
-      <a>
+      <a href="/">
         <span class="icon is-large"><i class="fa fa-home"></i></span>
       </a>
     </li>
     <li>
-      <a>
+      <a href="person">
         <span class="icon is-large"><i class="fa fa-user-plus"></i></span>
       </a>
     </li>
     <li>
-      <a>
+      <a href="candidates">
+        <span class="icon is-large"><i class="fa fa-question-circle-o"></i></span>
+      </a>
+    </li>
+    <li>
+      <a href="employees">
         <span class="icon is-large"><i class="fa fa-user"></i></span>
       </a>
     </li>
     <li>
-      <a>
-        <span class="icon is-large"><i class="fa fa-user-circle-o"></i></span>
-      </a>
+      <hr />
     </li>
     <li>
-      <a>
+      <a href="look_ups">
         <span class="icon is-large"><i class="fa fa-random"></i></span>
       </a>
     </li>

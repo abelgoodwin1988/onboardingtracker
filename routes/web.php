@@ -14,3 +14,17 @@
 Route::get('/', function () {
     return view('layouts.master');
 });
+
+// PERSON
+Route::get('/person', 'PersonController@index');
+
+// CANDIDATES
+
+// EMPLOYEES
+
+// LOOKUPS, :REQUIREMENTS, :MENTOR_TYPES, :POSITIONS
+// Because we have multiple identical classes, these will all be routed
+  // to a place where their respective controllers will then take over.
+Route::get('/look_ups', function () {
+    return view('look_ups.show');
+});
