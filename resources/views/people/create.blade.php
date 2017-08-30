@@ -8,7 +8,7 @@
   {{-- Header: Title & Subtitle --}}
   <section class="hero" id="header">
     <div class="hero-body">
-      <h1 class="title">Create record for a new person.</h1>
+      <h1 class="title">Create a record for a new person.</h1>
       <h2 class="subtitle">Fill in the information below to create a new record upon which all other operations take place. This includes creating a contact for a person, a new candidate record, a new employee record an so on!</h2>
     </div>
   </section>
@@ -24,6 +24,8 @@
       @include('partials.errors.errors_list')
 
       @include('people.partials.create')
+      
+    </form>
 
   </section>
 

@@ -14,7 +14,9 @@ class PersonController extends Controller
      */
     public function index()
     {
+
         return view('people.index');
+
     }
 
     /**
@@ -24,7 +26,9 @@ class PersonController extends Controller
      */
     public function create()
     {
+
         return view('people.create');
+
     }
 
     /**
@@ -35,7 +39,25 @@ class PersonController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $person = new Person;
+
+        $this->validate(request(),[
+          'name_first' => 'required',
+          'name_last' => 'required',
+          'email' => 'required',
+          'phone_number' => 'required'
+        ]);
+        
+        Person::create([
+          'name_first' => request('name_first'),
+          'name_middle' => request('name_middle'),
+          'name_last' => request('name_last'),
+          'email' => request('email'),
+          'phone_number' => request('phone_number')
+        ]);
+
+        return redirect('/people/create');
+
     }
 
     /**
