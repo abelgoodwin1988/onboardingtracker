@@ -8,10 +8,10 @@
           <i class="fa fa-github"></i>
         </a>
 
-        <a href="https://vuejs.org/"><strong>Vue</strong></a>
+        <!-- <a href="https://vuejs.org/"><strong>Vue</strong></a>
         <a class="icon" href="https://github.com/vuejs/vue">
           <i class="fa fa-github"></i>
-        </a>
+        </a> -->
 
         <a href="http://bulma.io"><strong>Bulma</strong></a>
         <a class="icon" href="https://github.com/jgthms/bulma">

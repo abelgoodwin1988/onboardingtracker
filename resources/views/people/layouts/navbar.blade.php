@@ -1,7 +1,7 @@
 <div class="tabs is-boxed is-centered">
   <ul>
     <li>
-      <a href="#">
+      <a href="/people/show">
         <span class="icon"><i class="fa fa-users"></i></span>
       </a>
     </li>

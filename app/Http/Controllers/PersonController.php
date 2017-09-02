@@ -47,7 +47,7 @@ class PersonController extends Controller
           'email' => 'required',
           'phone_number' => 'required'
         ]);
-        
+
         Person::create([
           'name_first' => request('name_first'),
           'name_middle' => request('name_middle'),
@@ -58,6 +58,16 @@ class PersonController extends Controller
 
         return redirect('/people/create');
 
+    }
+
+    public function showPeople() {
+      //
+
+      $person = new Person;
+
+      $people = person::all();
+
+      return view('people.show', ['people' => $people]);
     }
 
     /**
