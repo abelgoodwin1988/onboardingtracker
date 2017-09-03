@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\person;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class PersonController extends Controller
 {
@@ -31,6 +32,18 @@ class PersonController extends Controller
 
     }
 
+    public function showPeople() {
+      //
+
+      $people = new Person;
+
+      $people = Person::orderBy('created_at','desc')->get();
+
+      // people = Person::orderBy('created_at', 'desc');->get();
+
+      return view('people.show_people.index', ['people' => $people]);
+    }
+
     /**
      * Store a newly created resource in storage.
      *
@@ -56,18 +69,8 @@ class PersonController extends Controller
           'phone_number' => request('phone_number')
         ]);
 
-        return redirect('/people/create');
+        return redirect('/people/show');
 
-    }
-
-    public function showPeople() {
-      //
-
-      $person = new Person;
-
-      $people = person::all();
-
-      return view('people.show', ['people' => $people]);
     }
 
     /**

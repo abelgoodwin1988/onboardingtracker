@@ -5,5 +5,5 @@
 @endsection
 
 @section('content')
-  person content show
+  @include('people.partials.person_card')
 @endsection

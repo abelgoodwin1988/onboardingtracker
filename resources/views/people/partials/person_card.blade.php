@@ -1,12 +1,49 @@
-<!-- @foreach ($recent10 as $blog)
-  <div class="list-group" style="margin-bottom:2em;">
-    <a href="blog/id={{$blog->id}}" class="list-group-item list-group-item-action flex-column align-items-start">
-      <div class="d-flex w-100 justify-content-between">
-        <h5 class="mb-1">{{$blog->title}}</h5>
-        <small>{{$blog->created_at->diffForHumans()}}</small>
+{{--
+{{$person->id}}
+{{$person->name_first}}
+{{$person->name_middle}}
+{{$person->name_last}}
+{{$person->email}}
+{{$person->phone_number}}
+ --}}
+
+@foreach ($people as $person)
+  <div class="card">
+
+    <div class="card-content">
+      <div class="columns">
+        <div class="column">
+
+          <p class="title">
+            {{$person->name_last}}, {{$person->name_first}} {{$person->name_middle}}
+          </p>
+          <p class="subtitle">
+            {{$person->email}}
+          </p>
+          <p class="subtitle">
+            {{$person->phone_number}}
+          </p>
+        </div>
+
+        <div class="column">
+          <p class="subtitle">
+            Created: {{$person->created_at->toFormattedDateString(}}
+          </p>
+          <p class="subtitle">
+            Last Updated: {{$person->updated_at->toFormattedDateString()}}
+          </p>
+        </div>
+
       </div>
-      <p class="mb-1">{{$blog->shortDescription}}</p>
-      <small>By: {{$blog->user->name}}</small>
-    </a>
+    </div>
+
+    <footer class="card-footer">
+      <p class="card-footer-item">
+        <span>
+          <a href="/person_id={{$person->person_id}}">View Person</a>
+        </span>
+      </p>
+    </footer>
+
   </div>
-@endforeach -->
+@endforeach
