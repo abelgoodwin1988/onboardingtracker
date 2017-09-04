@@ -7,9 +7,14 @@
 {{$person->phone_number}}
  --}}
 <div class="section">
-  @foreach ($people as $person)
+  <div class="columns is-multiline">
 
-    <div class="content is-inline-flex">
+
+  @foreach ($people as $person)
+    <div class="column is-4">
+
+
+    <div class="content">
 
       <div class="card">
 
@@ -41,6 +46,11 @@
               <p class="subtitle">
                 Last Updated: {{$person->updated_at->toFormattedDateString()}}
               </p>
+              @if(isset($person->deleted_at))
+                <p class="subtitle">
+                  Deleted: {{$person->updated_at->toFormattedDateString()}}
+                </p>
+              @endif
             </div>
 
           </div>
@@ -56,5 +66,7 @@
 
       </div>
     </div>
+    </div>
   @endforeach
+  </div>
 </div>
