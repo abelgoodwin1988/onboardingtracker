@@ -37,7 +37,7 @@ class PersonController extends Controller
 
       $people = new Person;
 
-      $people = Person::orderBy('created_at','desc')->get();
+      $people = Person::orderBy('created_at','desc')->withTrashed()->get();
 
       // people = Person::orderBy('created_at', 'desc');->get();
 
