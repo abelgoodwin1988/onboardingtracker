@@ -27,7 +27,7 @@
 
         <div class="column">
           <p class="subtitle">
-            Created: {{$person->created_at->toFormattedDateString(}}
+            Created: {{$person->created_at->toFormattedDateString()}}
           </p>
           <p class="subtitle">
             Last Updated: {{$person->updated_at->toFormattedDateString()}}
