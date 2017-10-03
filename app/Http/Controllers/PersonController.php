@@ -8,27 +8,10 @@ use Illuminate\Support\Facades\DB;
 
 class PersonController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
     public function index()
     {
 
         return view('people.index');
-
-    }
-
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function createPeople()
-    {
-
-        return view('people.create');
 
     }
 
@@ -42,6 +25,34 @@ class PersonController extends Controller
       // people = Person::orderBy('created_at', 'desc');->get();
 
       return view('people.show_people.index', ['people' => $people]);
+    }
+
+    public function createPeople()
+    {
+
+        return view('people.create_people.index');
+
+    }
+
+    public function editPeople()
+    {
+
+        return view('people.edit_people.index');
+
+    }
+
+    public function deletePeople()
+    {
+
+        return view('people.delete_people.index');
+
+    }
+
+    public function findPeople()
+    {
+
+        return view('people.find_people.index');
+
     }
 
     /**
