@@ -23,10 +23,11 @@ Route::get('/tool', function () {
 
 // PERSON
 Route::get('/people', 'PersonController@index');
-Route::get('/people/show', 'PersonController@showPeople');
-Route::get('/people/create', 'PersonController@createPeople');
-Route::get('/people/create', 'PersonController@deletePeople');
-Route::get('/people/create', 'PersonController@findPeople');
+Route::get('/people/show', 'PersonController@showPerson');
+Route::get('/people/create', 'PersonController@createPerson');
+Route::get('/people/edit', 'PersonController@editPerson');
+Route::get('/people/delete', 'PersonController@deletePerson');
+Route::get('/people/find', 'PersonController@findPerson');
 Route::post('/people/create_person', 'PersonController@store');
 
 // CANDIDATES

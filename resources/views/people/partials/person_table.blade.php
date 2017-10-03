@@ -1,5 +1,5 @@
   <div class="section is-centered">
-    <table class="table is-striped is-narrow is-fullwidth">
+    <table class="table is-striped is-fullwidth">
       <thead>
         <tr>
           <th>Employee ID</th>

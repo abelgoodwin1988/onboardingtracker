@@ -15,40 +15,40 @@ class PersonController extends Controller
 
     }
 
-    public function showPeople() {
+    public function showPerson() {
       //
 
       $people = new Person;
 
-      $people = Person::orderBy('created_at','desc')->withTrashed()->take(45)->get();
+      $people = Person::orderBy('created_at','desc')->withTrashed()->take(50)->get();
 
       // people = Person::orderBy('created_at', 'desc');->get();
 
       return view('people.show_people.index', ['people' => $people]);
     }
 
-    public function createPeople()
+    public function createPerson()
     {
 
         return view('people.create_people.index');
 
     }
 
-    public function editPeople()
+    public function editPerson()
     {
 
         return view('people.edit_people.index');
 
     }
 
-    public function deletePeople()
+    public function deletePerson()
     {
 
         return view('people.delete_people.index');
 
     }
 
-    public function findPeople()
+    public function findPerson()
     {
 
         return view('people.find_people.index');

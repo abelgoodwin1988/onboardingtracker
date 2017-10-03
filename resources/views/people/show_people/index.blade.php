@@ -6,28 +6,33 @@
 
 @section('content')
 
-  <h1 class="has-text-centered has-text-dark is-size-3">Recently Added</h1>
+  <section class="hero" id="header">
+    <div class="hero-body">
+      <h1 class="title">Recently Added</h1>
+      <h2 class="subtitle">50 Most recently added people. Toggle between table and card views.</h2>
+    </div>
+  </section>
+
+  <hr />
 
   {{-- TODO --}}
   {{-- enable toggling between views --}}
-  <div class="container">
-    <div class="field has-addons has-addons-centered">
-      <p class="control">
-        <a class="button">
-          <span class="icon is-small">
-            <i class="fa fa-address-card-o"></i>
-          </span>
-        </a>
-      </p>
+  <div class="field has-addons">
+    <p class="control">
+      <a class="button">
+        <span class="icon is-small">
+          <i class="fa fa-address-card-o"></i>
+        </span>
+      </a>
+    </p>
 
-      <p class="control">
-        <a class="button">
-          <span class="icon is-small">
-            <i class="fa fa-list"></i>
-          </span>
-        </a>
-      </p>
-    </div>
+    <p class="control">
+      <a class="button">
+        <span class="icon is-small">
+          <i class="fa fa-list"></i>
+        </span>
+      </a>
+    </p>
   </div>
 
   @include('people.partials.person_table')
