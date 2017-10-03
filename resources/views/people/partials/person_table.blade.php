@@ -1,11 +1,3 @@
-{{--
-{{$person->id}}
-{{$person->name_first}}
-{{$person->name_middle}}
-{{$person->name_last}}
-{{$person->email}}
-{{$person->phone_number}}
- --}}
   <div class="section is-centered">
     <table class="table">
       <thead>
