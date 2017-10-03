@@ -11,17 +11,17 @@
       </a>
     </li>
     <li>
-      <a href="#">
+      <a href="/people/edit">
         <span class="icon"><i class="fa fa-user-md"></i></span>
       </a>
     </li>
     <li>
-      <a href="#">
+      <a href="/people/delete">
         <span class="icon"><i class="fa fa-ban"></i></span>
       </a>
     </li>
     <li>
-      <a href="#">
+      <a href="/people/find">
         <span class="icon"><i class="fa fa-address-book-o"></i></span>
       </a>
     </li>
