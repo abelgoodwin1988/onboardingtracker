@@ -24,7 +24,7 @@ Route::get('/tool', function () {
 // PERSON
 Route::get('/people', 'PersonController@index');
 Route::get('/people/show', 'PersonController@showPeople');
-Route::get('/people/create', 'PersonController@create');
+Route::get('/people/create', 'PersonController@createPeople');
 Route::post('/people/create_person', 'PersonController@store');
 
 // CANDIDATES
