@@ -1,5 +1,5 @@
   <div class="section is-centered">
-    <table class="table">
+    <table class="table is-striped is-narrow is-fullwidth">
       <thead>
         <tr>
           <th>Employee ID</th>
@@ -25,11 +25,11 @@
             <th>{{$person->name_middle}}</th>
             <th>{{$person->email}}</th>
             <th>{{$person->phone_number}}r</th>
-            <th>{{$person->created_at->toFormattedDateString()}}</th>
-            <th>{{$person->updated_at->toFormattedDateString()}}</th>
+            <th>{{$person->created_at->toDateString()}}</th>
+            <th>{{$person->updated_at->toDateString()}}</th>
             <th>
               @if(isset($person->deleted_at))
-                  {{$person->deleted_at->toFormattedDateString()}}
+                  {{$person->deleted_at->toDateString()}}
               @endif
             </th>
           </tr>
