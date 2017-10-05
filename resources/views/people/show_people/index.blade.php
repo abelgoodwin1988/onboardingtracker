@@ -19,7 +19,7 @@
   {{-- enable toggling between views --}}
   <div class="field has-addons">
     <p class="control">
-      <a class="button">
+      <a class="button" id="card_toggle">
         <span class="icon is-small">
           <i class="fa fa-address-card-o"></i>
         </span>
@@ -27,7 +27,7 @@
     </p>
 
     <p class="control">
-      <a class="button">
+      <a class="button" id="list_toggle">
         <span class="icon is-small">
           <i class="fa fa-list"></i>
         </span>
