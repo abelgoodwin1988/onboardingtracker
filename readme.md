@@ -4,4 +4,4 @@
 
 ## Logical Data-Model Design
 
-![Lucid Chard Design](https://www.lucidchart.com/invitations/accept/29aaefb2-9923-4b29-a2c7-710208b893d5)
+![Lucid Chard Design](https://www.lucidchart.com/publicSegments/view/ae4d40f4-b4b5-4b19-bc93-267ea124bca7)
